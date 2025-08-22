@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= school.name %></title>
+</head>
+<body>
+  <h1><%= school.name %></h1>
+  <p>City: <%= school.city %></p>
+  <p>Address: <%= school.location %></p>
+  <p>Description: <%= school.description %></p>
+
+  <a href="/search?cityFromSearch=<%= school.city %>">⬅ Back to Schools</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schools in <%= city %></title>
+</head>
+<body>
+  <h1>Schools in <%= city %></h1>
+  <div class="grid">
+    
+    <% schools.forEach(school => { %>
+      <div class="card" >
+        <a href="/schools/<%= school._id %>">
+        <h3><%= school.name %></h3>
+        <p><img src=<%= school.image.url %> height=400px width=400px></p>
+        </a>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
