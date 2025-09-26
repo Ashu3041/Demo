@@ -78,5 +78,5 @@ app.get("/schools/:id", async (req, res) => {
 
 const port=8080;
 app.listen(port,()=>{
-    console.log(`Server is running on http//:localhost:${port}`);
+    console.log(`Server is running on http://localhost:${port}`);
 });
